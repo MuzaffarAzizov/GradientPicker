@@ -47,6 +47,5 @@ document.addEventListener("DOMContentLoaded", () => {
   gradientDirectionSelect.addEventListener("change", updateGradient);
   copyButton.addEventListener("click", copyCSS);
 
-  // Initialize with default gradient
   updateGradient();
 });
