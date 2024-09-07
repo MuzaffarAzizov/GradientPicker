@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gradient-container">
+      <h1>GradientPicker</h1>
+      <div class="box">
+        <form action="#">
+          <input type="color" />
+        </form> 
+        <div class="options">
+          <select name="type" id="type">
+            <option value="linear" selected>Linear</option>
+            <option value="radial">Radial</option>
+          </select>
+          <select name="direction" id="direction">
+            <option value="right" selected>Right</option>
+            <option value="top">Top</option>
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="bottom">Bottom</option>
+          </select>
+        </div>
+        <div class="css-box">
+          <div class="css-box__header">
+            <h3>CSS Value</h3>
+            <div class="copy-button">
+              <span id="copied">Copied!</span>
+              <button id="copy-css">Copy</button>
+            </div>
+          </div>
+          <textarea name="css" id="css" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
